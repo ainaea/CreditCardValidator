@@ -83,7 +83,7 @@ function idInvalidCardIssuers(nestedArr) {
         
             default:
                 alert(`Issuer of Card ${nestedArr[i]} not found`);
-                break;
+                continue;
         }
         faultyIssuers.indexOf(issuer) == -1? faultyIssuers.push(issuer): null;
      }
