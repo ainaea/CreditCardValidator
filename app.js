@@ -44,10 +44,10 @@ function validateCard(entryArr) {
            sum += parseInt(arrElement > 4? (2*arrElement)-9: (2*arrElement))
        }
     }
-    return (sum % 10) == 0? true: false;
+    return (sum % 10) == 0;
 }
 
-// console.log(validateCard(transformStrArr(invalid3)));
+// console.log(validateCard(transformStrArr(valid3)));
 
 
 function findInvalidCards(nestedArr) {
